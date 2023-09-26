@@ -36,6 +36,10 @@ app.get("/valueofday/:year(\\d{4})-:month(\\d{2})-:day(\\d{2})", (req, res) => {
   console.log(req.params)
   res.send(req.params)
 });
+//http://localhost:3000/c0852636
+app.get('/c0852636', (req, res) => {
+  res.send('c0852636-GurneetKaurTakhar')
+})
   
 app.listen(process.env.PORT  || SERVER_PORT, () => {
     console.log(`Server running at http://${SERVER_HOST}:${SERVER_PORT}/`);
